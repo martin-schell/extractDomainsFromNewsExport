@@ -7,12 +7,13 @@
 #
 # Log resolving into a log file
 
-OUT_FILE=$(basename "$0").out
-LOG_FILE=$(basename "$0").log
+SCRIPTNAME=$(basename "$0" | cut -d'.' -f1)
+OUT_FILE="$SCRIPTNAME".out
+LOG_FILE="$SCRIPTNAME".log
 
 usage() {
   echo "Usage: $0"
-  echo "-i, --input <file>  Read OPML export from Nectcloud News"
+  echo "-i, --input <file>  Read OPML export from Nextcloud News"
   echo "-h, --help          Print usage"
 }
 
