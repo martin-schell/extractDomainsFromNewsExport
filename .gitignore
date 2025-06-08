@@ -1,4 +1,5 @@
-*.opml
-*.log
-*.json
-*.out
+*.*
+!*.sh
+!LICENSE
+!README
+!.gitignore
